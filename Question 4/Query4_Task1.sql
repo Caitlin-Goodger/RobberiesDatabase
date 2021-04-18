@@ -1,0 +1,1 @@
+SELECT robberid, nickname, age FROM Robbers WHERE Age > 20 AND AGE < 40

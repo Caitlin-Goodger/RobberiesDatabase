@@ -1,0 +1,1 @@
+SELECT bankname, city FROM Banks b WHERE NOT EXISTS(SELECT 1 FROM robberies r WHERE r.bankname = b.bankname AND r.city = b.city );

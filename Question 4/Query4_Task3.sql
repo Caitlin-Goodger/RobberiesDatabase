@@ -1,0 +1,1 @@
+SELECT bankname, city FROM hasaccounts WHERE robberid = (SELECT robberid FROM robbers WHERE nickname = 'Al Capone');

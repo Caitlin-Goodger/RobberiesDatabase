@@ -1,0 +1,1 @@
+SELECT DISTINCT r.robberid, r.nickname from Robbers r JOIN accomplices a on r.robberid = a.robberid JOIN banks b on a.bankname = b.bankname WHERE b.bankname NOT IN(SELECT bankname FROM hasaccounts h WHERE h.robberid = r.robberid)

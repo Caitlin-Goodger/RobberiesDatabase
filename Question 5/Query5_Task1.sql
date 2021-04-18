@@ -1,0 +1,1 @@
+SELECT DISTINCT p.bankname, p.city from Plans p LEFT JOIN robberies r ON p.bankname = r.bankname AND r.city=p.city WHERE r.date IS NULL OR extract(YEAR from p.planneddate) != extract(Year from r.date)

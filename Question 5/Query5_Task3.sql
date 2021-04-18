@@ -1,0 +1,1 @@
+SELECT r.robberid, r.nickname, s.description FROM Robbers r JOIN hasskills h on r.robberid = h.robberid JOIN skills s on h.skillid = s.skillid WHERE 1 < (SELECT COUNT(h.robberid) from hasskills h WHERE h.robberid = r.robberid ) AND h.preference = 1
